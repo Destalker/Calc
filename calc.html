@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Calculator</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="box">
+    <div class="display"><input type="text" readonly size="18" id="d"></div>
+    <div class="keys">
+        <p><input type="button" class="button red" value="AC" onclick='show("0")'><input type="button" class="button green" value="m-" onclick='mem_l()'><input type="button" class="button green" value="m+" onclick='mem_s()'><input type="button" class="button pink" value="/" onclick='rem("/")'></p>
+        <p><input type="button" class="button black" value="7" onclick='enter("7")'><input type="button" class="button black" value="8" onclick='enter("8")'><input type="button" class="button black" value="9" onclick='enter("9")'><input type="button" class="button pink" value="*" onclick='rem("*")'></p>
+        <p><input type="button" class="button black" value="4" onclick='enter("4")'><input type="button" class="button black" value="5" onclick='enter("5")'><input type="button" class="button black" value="6" onclick='enter("6")'><input type="button" class="button pink" value="-" onclick='rem("-")'></p>
+        <p><input type="button" class="button black" value="1" onclick='enter("1")'><input type="button" class="button black" value="2" onclick='enter("2")'><input type="button" class="button black" value="3" onclick='enter("3")'><input type="button" class="button pink" value="+" onclick='rem("+")'></p>
+        <p><input type="button" class="button black" value="0" onclick='enter("0")'><input type="button" class="button black" value="." onclick='enter(".")'><input type="button" class="button red" value="DEL" onclick='del()'><input type="button" class="button orange" value="=" onclick='result()'></p>
+    </div>
+</div>
+
+</body>
+<script src="js/calc.js" ></script>
+</html>
